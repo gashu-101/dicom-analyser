@@ -54,7 +54,7 @@ if uploaded_file:
         slice_index = st.number_input("Slice Index (only for 'slice' projection)", min_value=0, step=1, value=0)
         image, dicom_data = dicom_to_image(uploaded_file, slice_index=slice_index, projection=projection_method)
 
-        st.write(dicom_data)
+        #st.write(dicom_data)
 
         st.subheader("Original Image")
         st.image(image, caption="Original DICOM Image", use_column_width=True)
